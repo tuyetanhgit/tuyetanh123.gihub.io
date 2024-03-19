@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="a.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="content__header">
+                <div class="logo__header">
+                    <img src="Anh/9slyat87.png" alt="" class="imageChange">
+                </div>
+                <div class="box">
+                    <input type="text" placeholder="Tìm kiếm">
+                    <a><i class="fas fa-search-location"></i></a>
+                </div>
+                <div class="menu__header">
+                    <nav>
+                        <ul class="nav__link">
+                            <li><a href="banthietbiyte.html"><i class="fa fa-home" aria-hidden="true"></i> Trang chủ </a></li>
+                            <li><a href=""><i class="fa fa-user" aria-hidden="true"></i> Giới thiệu</a></li>
+                            <li><a href="sanpham.html"><i class="fa fa-server" aria-hidden="true"></i> Sản phẩm</a></li>
+                            <li><a href=""><i class="fa fa-phone" aria-hidden="true"></i> Liên hệ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="card__head">
+                    <div class="card" id="popup_card">
+                        <img src="Anh/Group 16.png" alt="" class="imageChange">
+                        <span>3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+        <h1 style="color:blue"> GIỚI THIỆU</h1>
+
+   <h1>SIÊU THỊ BÁN THIẾT BỊ Y TẾ</h1>
+    <div class="gt">
+        Siêu Thị Trang Thiết Bị Y Tế Gia Đình là một cửa hàng trực tuyến chuyên cung cấp các thiết bị y tế và dụng cụ y khoa.<br>
+        Chúng tôi nhập khẩu và phân phối các sản phẩm chính hãng, đảm bảo chất lượng và dịch vụ tốt nhất cho khách hàng.<br>
+        Cửa hàng chúng tôi cung cấp nhiều loại sản phẩm y tế chất lượng với giá thành phù hợp. Chúng tôi cam kết mang đến<br>
+        cho khách hàng những sản phẩm chất lượng, đáng tin cậy và giá trị cao. Hãy liên hệ với chúng tôi để được tư vấn và <br>
+        mua sắm các sản phẩm y tế cho gia đình của bạn!
+        <p class="gt"></p>
+    <img src="https://th.bing.com/th/id/OIP.p5YY7XGWjaVPxevp5wkJ8QHaE8?w=279&h=186&c=7&r=0&o=5&cb=11&dpr=1.3&pid=1.7" alt=""/>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/03bca92048.js" crossorigin="anonymous"></script>
+    <script>
+        let popup_card = document.getElementById('popup_card');
+        let popup = document.querySelector('.popup_shopping');
+        let overlay = document.querySelector('.overlay');
+        let button = document.querySelector('button.button');
+        popup_card.addEventListener("click",()=>{
+            popup.classList.add('active');
+            overlay.classList.add('active');
+        });
+        overlay.addEventListener("click",()=>{
+       
+            overlay.classList.remove('active');
+        });
+    </script>
+</body>
+</html>

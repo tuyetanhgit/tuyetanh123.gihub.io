@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background:url(Anh/yte.jpg) no-repeat top left;
+    background-size: cover;
+    font-family: sans-serif;
+}
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.box-menu{
+    background-color: #ad6c9c;
+    text-align: center;
+
+}
+.box-menu ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.box-menu ul li{
+    width: 170px;
+    margin: 5px;
+    padding: 15px;
+}
+.box-menu ul li a{
+   color: #fff;
+   text-decoration: none ;
+}
+.active,.box-menu ul li:hover{
+    background: #ad6c9c;
+    border-radius: 3px;
+}
+.box-menu .fa{
+    margin-right:5px;
+}
+.box-submenu{
+    display: none;
+}
+.box-menu ul li:hover .box-submenu{
+    display: block;
+    position: absolute;
+    background: #ad6c9c;
+    margin-top:15px;
+    margin-left: -15px;
+}
+.box-menu ul li:hover .box-submenu ul{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+.box-menu ul li:hover .box-submenu ul li{
+    width:220px;
+    text-align: left;
+    border-bottom: dotted 1px #fff;
+    background: transparent;
+    border-radius: 0;
+    padding: 10px;
+    margin: 10px;
+}
+.box-menu ul li:hover .box-submenu ul li:last-child{
+    border-bottom: none;
+
+}
+.box-menu ul li:hover .box-submenu ul li a:hover{
+    color: yellowgreen;
+}
+.fa-angle-right{
+    float: right;
+}
+.imageChange {
+    max-width: 100px;
+    height: auto;
+    }
+    body > div {
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box {
+        height: 60px;
+        background-color: rgb(164, 191, 83);
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    input {
+        background: none;
+        outline: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        width: 0px;
+        transition: 0.8s ease;
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    input::placeholder {
+        color: antiquewhite;
+    }
+    a {
+        color: whitesmoke;
+        text-align: center;
+        width: 60px;
+        font-size: 18px;
+    }
+    .box:hover input {
+        width: 200px;
+        margin: 0 20px;
+        border-bottom: 2px solid rgb(1, 1, 1);
+    }
+    input:focus {
+        width: 200px;
+        margin: 0 20px;
+        border-bottom: 2px solid red;
+    }
+.container{
+    
+    max-width: 1140px;
+    margin: 0 auto;
+}
+header{
+    background: #ad6c9c;
+    padding: 5px 0;
+}
+header .container .content__header{
+    display: flex;
+    align-items: center;
+}
+header .container .content__header .logo__header{
+    flex-basis: 10%;
+}
+header .container .content__header .menu__header{
+    flex-basis: 80%;
+}
+header .container .content__header .card__head{
+    flex-basis: 10%;
+}
+header .container .content__header .card__head .card{
+    position: relative;
+    width: 40px;
+    cursor: pointer;
+}
+
+header .container .content__header .card__head .card span{
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 50%;
+    height: 50%;
+    background: rgb(252, 252, 252);
+    color: #161117;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+header .container .content__header .menu__header nav .nav__link li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+header .container .content__header .menu__header nav .nav__link li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+}
+header .container .content__header .menu__header nav .nav__link li a:hover{
+    text-decoration: underline;
+}
+header .container .content__header .card__head{
+    flex-basis: 10%;
+}
